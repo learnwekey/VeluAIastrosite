@@ -1,0 +1,81 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import FloatingScreenshot from "@/components/floating-screenshot.astro";
+---
+
+<Layout title="AI Native Documentation Platform">
+  <Container>
+    <section class="py-16 md:py-24">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
+          AI native documentation platform
+        </h1>
+        <h2 class="mt-4 text-lg md:text-xl text-slate-600">
+          Centralize product knowledge, automate updates, and publish accurate
+          docs that stay aligned with every release.
+        </h2>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Unified knowledge workspace
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Organize guides, references, and release notes in one place with
+          structured templates and smart categorization.
+        </p>
+      </div>
+      <div>
+        <FloatingScreenshot />
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div class="md:order-2">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          AI-assisted updates
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Keep docs current with automated change detection, rewrite suggestions,
+          and consistency checks.
+        </p>
+      </div>
+      <div class="md:order-1">
+        <FloatingScreenshot />
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Multi-format publishing
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Publish to web, in-app, and PDF formats with layouts optimized for
+          search and readability.
+        </p>
+      </div>
+      <div>
+        <FloatingScreenshot />
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div class="md:order-2">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Built for collaboration
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Collaborate across teams with review workflows, approvals, and
+          versioned histories.
+        </p>
+      </div>
+      <div class="md:order-1">
+        <FloatingScreenshot />
+      </div>
+    </section>
+  </Container>
+</Layout>

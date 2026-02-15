@@ -1,0 +1,81 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import FloatingScreenshot from "@/components/floating-screenshot.astro";
+---
+
+<Layout title="AI for Technical Writing">
+  <Container>
+    <section class="py-16 md:py-24">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
+          AI for technical writing that ships faster docs
+        </h1>
+        <h2 class="mt-4 text-lg md:text-xl text-slate-600">
+          Turn complex product knowledge into clear, structured documentation
+          with guided workflows, smart summaries, and review-ready output.
+        </h2>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Draft from raw inputs
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Feed meeting notes, release updates, or specs and get a polished
+          first draft in minutes with consistent structure and tone.
+        </p>
+      </div>
+      <div>
+        <FloatingScreenshot />
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div class="md:order-2">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Technical accuracy built in
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Keep terminology and product details consistent with reusable
+          snippets, glossary checks, and version-aware updates.
+        </p>
+      </div>
+      <div class="md:order-1">
+        <FloatingScreenshot />
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Turn videos into docs
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Convert walkthroughs and demos into step-by-step guides with timestamps,
+          summaries, and editable sections.
+        </p>
+      </div>
+      <div>
+        <FloatingScreenshot />
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div class="md:order-2">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Review, refine, and publish
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Collaborate on edits, capture feedback, and ship updates with confidence
+          using a clean review workflow.
+        </p>
+      </div>
+      <div class="md:order-1">
+        <FloatingScreenshot />
+      </div>
+    </section>
+  </Container>
+</Layout>

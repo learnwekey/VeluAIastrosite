@@ -1,48 +1,9 @@
 ---
 // @ts-ignore
-import { Icon } from "astro-icon/components";
-
-const features = [
-  {
-    title: "Bring Your Own Framework",
-    description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
-  },
-  {
-    title: "100% Static HTML, No JS",
-    description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
-  },
-  {
-    title: "On-Demand Components",
-    description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
-  },
-  {
-    title: "Broad Integration",
-    description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
-  },
-  {
-    title: "SEO Enabled",
-    description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
-  },
-];
+import FloatingScreenshot from "@/components/floating-screenshot.astro";
 ---
 
-<div class="mt-16 md:mt-0">
+<div id="features" class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
     Everything you need to start a website
   </h2>
@@ -52,78 +13,44 @@ const features = [
   </p>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
+<div class="mt-16 grid gap-6 md:grid-cols-6">
+  <div class="md:col-span-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <h3 class="text-xl font-semibold">Documentation platform</h3>
+    <p class="mt-3 text-slate-600">
+      Centralize product knowledge with structured docs, templates, and versioned
+      publishing in one place.
+    </p>
+  </div>
+  <div class="md:col-span-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <h3 class="text-xl font-semibold">Technical writing agent</h3>
+    <p class="mt-3 text-slate-600">
+      Draft, refine, and standardize guides with AI-powered tone and terminology
+      checks built in.
+    </p>
+  </div>
+  <div class="md:col-span-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <h3 class="text-xl font-semibold">Video to docs</h3>
+    <p class="mt-3 text-slate-600">
+      Convert walkthroughs into step-by-step guides with timestamps, summaries,
+      and visuals.
+    </p>
+    <div class="mt-6 mx-auto max-w-2xl">
+      <FloatingScreenshot />
+    </div>
+  </div>
+  <div class="md:col-span-2 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <h3 class="text-xl font-semibold">Release-ready updates</h3>
+    <p class="mt-3 text-slate-600">
+      Keep docs current with guided change reviews and approval workflows.
+    </p>
+    <div class="mt-6 mx-auto max-w-2xl">
+      <FloatingScreenshot />
+    </div>
+  </div>
+  <div class="md:col-span-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <h3 class="text-xl font-semibold">Analytics and insights</h3>
+    <p class="mt-3 text-slate-600">
+      Understand what readers need most with content performance dashboards.
+    </p>
+  </div>
 </div>
-
-<section class="mt-20 grid md:grid-cols-2 gap-12 items-center">
-  <div>
-    <h3 class="text-3xl lg:text-4xl font-bold lg:tracking-tight">
-      Support that scales with your launch
-    </h3>
-    <p class="text-lg mt-4 text-slate-600">
-      Get hands-on guidance, templates, and optimization tips that keep your
-      site fast, accessible, and ready for growth.
-    </p>
-  </div>
-  <div class="bg-slate-50 rounded-2xl p-6 shadow-sm">
-    <img
-      src="https://ik.imagekit.io/wgcu5dez6opg/VeluAstro/84d8a1e7-65e6-49de-a660-8ae1d0b2f9f5.jpeg"
-      alt="Support team collaborating on a website"
-      loading="lazy"
-      class="w-full h-auto rounded-xl"
-    />
-  </div>
-</section>
-
-<section class="mt-20 grid md:grid-cols-2 gap-12 items-center">
-  <div class="md:order-2">
-    <h3 class="text-3xl lg:text-4xl font-bold lg:tracking-tight">
-      Built-in performance boosts
-    </h3>
-    <p class="text-lg mt-4 text-slate-600">
-      Ship faster pages with smart optimization, image handling, and lean
-      delivery defaults that keep every visit snappy.
-    </p>
-  </div>
-  <div class="bg-slate-50 rounded-2xl p-6 shadow-sm md:order-1">
-    <img
-      src="https://ik.imagekit.io/wgcu5dez6opg/VeluAstro/84d8a1e7-65e6-49de-a660-8ae1d0b2f9f5.jpeg"
-      alt="Support team collaborating on a website"
-      loading="lazy"
-      class="w-full h-auto rounded-xl"
-    />
-  </div>
-</section>
-
-<section class="mt-20 grid md:grid-cols-2 gap-12 items-center">
-  <div>
-    <h3 class="text-3xl lg:text-4xl font-bold lg:tracking-tight">
-      Launch-ready integrations
-    </h3>
-    <p class="text-lg mt-4 text-slate-600">
-      Connect analytics, email, and CMS tools in minutes with guided setup and
-      clear documentation at every step.
-    </p>
-  </div>
-  <div class="bg-slate-50 rounded-2xl p-6 shadow-sm">
-    <img
-      src="https://ik.imagekit.io/wgcu5dez6opg/VeluAstro/84d8a1e7-65e6-49de-a660-8ae1d0b2f9f5.jpeg"
-      alt="Support team collaborating on a website"
-      loading="lazy"
-      class="w-full h-auto rounded-xl"
-    />
-  </div>
-</section>

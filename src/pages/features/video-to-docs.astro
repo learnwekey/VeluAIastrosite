@@ -1,0 +1,81 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import FloatingScreenshot from "@/components/floating-screenshot.astro";
+---
+
+<Layout title="Video to Docs">
+  <Container>
+    <section class="py-16 md:py-24">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
+          Video to docs, automatically
+        </h1>
+        <h2 class="mt-4 text-lg md:text-xl text-slate-600">
+          Turn product walkthroughs into structured documentation with clear
+          steps, summaries, and ready-to-publish content.
+        </h2>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Upload and transcribe fast
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Drop in a video and get accurate transcripts with speaker detection,
+          timestamps, and searchable moments.
+        </p>
+      </div>
+      <div>
+        <FloatingScreenshot />
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div class="md:order-2">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Structure the guide automatically
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Generate step-by-step instructions, headings, and callouts that match
+          the flow of your walkthrough.
+        </p>
+      </div>
+      <div class="md:order-1">
+        <FloatingScreenshot />
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Capture key visuals
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Pull screenshots and highlight UI moments to make the guide visual and
+          easy to follow.
+        </p>
+      </div>
+      <div>
+        <FloatingScreenshot />
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-12">
+      <div class="md:order-2">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+          Review, edit, and publish
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Share drafts with teammates, tighten language, and export to your docs
+          platform in minutes.
+        </p>
+      </div>
+      <div class="md:order-1">
+        <FloatingScreenshot />
+      </div>
+    </section>
+  </Container>
+</Layout>
